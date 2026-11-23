@@ -1,0 +1,28 @@
+row_number,participant_id,status,severity,rule_id,message
+831,R-0001,retiree,hard,duplicate_id,Participant id is missing or duplicated; both rows are dropped.
+832,R-0001,retiree,hard,duplicate_id,Participant id is missing or duplicated; both rows are dropped.
+2,A-0002,active,hard,bad_sex,Sex code is missing or not M/F.
+836,R-0006,retiree,hard,bad_sex,Sex code is missing or not M/F.
+1471,B-0001,beneficiary,hard,bad_sex,Sex code is missing or not M/F.
+1,A-0001,active,hard,bad_age,Date of birth is missing or age is outside 16 to 105.
+3,A-0003,active,hard,bad_benefit,"Annual benefit is missing, not positive, or above $400,000."
+522,D-0002,deferred_vested,hard,bad_benefit,"Annual benefit is missing, not positive, or above $400,000."
+833,R-0003,retiree,hard,bad_benefit,"Annual benefit is missing, not positive, or above $400,000."
+5,A-0005,active,hard,bad_compensation,"Active compensation is missing, not positive, or above $1,000,000."
+4,A-0004,active,hard,impossible_service,"Credited service is missing, negative, or greater than age minus 16."
+521,D-0001,deferred_vested,hard,impossible_service,"Credited service is missing, negative, or greater than age minus 16."
+523,D-0003,deferred_vested,hard,bad_final_average_pay,Final average pay is missing or not positive.
+834,R-0004,retiree,hard,joint_missing_spouse,Joint-and-survivor form is missing a usable spouse sex or date of birth.
+9,A-0009,active,hard,hire_after_measurement,Hire date is after the measurement date.
+524,D-0004,deferred_vested,hard,termination_before_hire,Termination date is before the hire date.
+835,R-0005,retiree,hard,retiree_too_young,"Retiree is under age 45, which is not a credible in-pay record."
+4,A-0004,active,soft,formula_mismatch,Implied accrual rate differs from the 1.50% plan formula by more than 0.20 percentage points.
+7,A-0007,active,soft,formula_mismatch,Implied accrual rate differs from the 1.50% plan formula by more than 0.20 percentage points.
+8,A-0008,active,soft,compensation_over_401a17,"Compensation is above the 2025 401(a)(17) limit of $350,000."
+522,D-0002,deferred_vested,soft,benefit_over_415b,"Annual benefit is above the 2025 415(b) dollar limit of $280,000."
+837,R-0007,retiree,soft,de_minimis_benefit,Annual benefit is under $600 and would be reviewed for a lump-sum cashout.
+839,R-0009,retiree,soft,early_retiree,Retiree is under age 55. Confirm the early-retirement commencement.
+835,R-0005,retiree,soft,spouse_age_gap,Member and spouse ages differ by more than 25 years.
+838,R-0008,retiree,soft,spouse_age_gap,Member and spouse ages differ by more than 25 years.
+4,A-0004,active,soft,service_date_mismatch,Credited service and hire date differ by more than 1.5 years.
+9,A-0009,active,soft,service_date_mismatch,Credited service and hire date differ by more than 1.5 years.
